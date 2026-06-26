@@ -9,8 +9,7 @@ link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 
 def test_guest_can_add_product_to_basket(browser):
 
-    browser = webdriver.Chrome()
-    browser.get('http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/')
+    
 
     """
     Тест проверяет возможность добавления товара в корзину.
@@ -19,7 +18,7 @@ def test_guest_can_add_product_to_basket(browser):
     3. Проверяет появление сообщения о добавлении.
     """
     # 1. Открываем ссылку
-    browser.get(link)
+    browser.get('http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/')
 
     # 2. Находим кнопку "Добавить в корзину" и нажимаем на неё.
     # Используем явное ожидание, чтобы дождаться, пока кнопка станет кликабельной.
